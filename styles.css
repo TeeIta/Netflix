@@ -1,0 +1,352 @@
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #eee;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-md {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.text-dark {
+  font-size: 1rem;
+  font-weight: 0;
+}
+
+/* Showcase Content */
+.showcase {
+  width: 100%;
+  height: 93vh;
+  padding: 20px;
+  position: relative;
+  background: url("./Resources/NetflixHome.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+  box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.showcase-top {
+  position: relative;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.showcase-top img {
+  width: 170px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+  top: 50%;
+  right: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+}
+
+.showcase-content h1 {
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 1.1;
+  margin: 0 0 0.2rem;
+}
+
+.showcase-content p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0.8rem 0 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Buttons area */
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  padding: 0.4rem 1.3rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-xl {
+  font-size: 1rem;
+  padding: 0.6rem 2rem;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+}
+
+.btn-lg {
+  font-size: 1.3rem;
+  padding: 0.7rem 2.4rem;
+  text-transform: uppercase;
+}
+
+/* Tags Container */
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 70%;
+  overflow: hidden;
+  padding: 0.2rem;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+.tabs {
+  background: var(--dark-color);
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab-border {
+  border-bottom: var(--primary-color) 4px solid;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-2-content-top {
+  padding: 30px 0;
+}
+
+#tab-2-content .tab-2-content-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.tab-2-content-bottom > div {
+  padding: 20px 0;
+}
+
+/* Table Area */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+table tbody tr td {
+  color: #999;
+  padding: 0.8em 1.2rem;
+  text-align: center;
+}
+
+table tbody tr td:first-child {
+  text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #222;
+}
+
+/* Footer */
+footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-bottom: 1.9rem;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+footer li {
+  line-height: 1.9rem;
+}
+
+/* Hide tab contents initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+/* Show specific content when clicked */
+.show{
+  display: block !important;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .showcase {
+    height: 80vh;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+  .text-lg {
+    font-size: 1.2rem;
+  }
+
+  .text-xl {
+    font-size: 0.6rem;
+  }
+
+  .text-md {
+    font-size: 1rem;
+  }
+
+  .btn-xl {
+    font-size: 0.7rem;
+  }
+
+  footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    background-blend-mode: overlay;
+    box-shadow: inset 80px 80px 250px #000, inset -80px -80px 250px #000;
+  }
+  #tab-1-content .tab-1-content-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #tab-2-content .tab-2-content-top {
+    display: block;
+  }
+  #tab-2-content .tab-2-content-bottom {
+    grid-template-columns: 1fr;
+  }
+}
